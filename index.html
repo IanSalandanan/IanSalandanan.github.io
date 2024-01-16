@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerby's Lair</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Kerby's Lair</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Kerby Salandanan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile_pic.jpg" alt="Kerby Salandanan Profile Pic"/>
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 id="profile-title" class="title">Kerby Salandanan</h1>
+            <p class="section_text_p1">Future Software Engineer</p>
+            <!--<div class="btn-container">
+                <button class="btn btn-color-2"></button>
+            </div>-->
+            <div id="socials-container">
+                <img class="icon" src="./assets/fb.png" alt="My FB Profile" onmouseover="changeTitle('Christian Salandanan')" onmouseout="resetTitle()" onclick="location.href='https://www.facebook.com/christiankerby.salandanan.5/'"/>
+                <img class="icon" src="./assets/ig.png" alt="My IG Profile" onmouseover="changeTitle('@qquerubinn')" onmouseout="resetTitle()" onclick="location.href='https://www.instagram.com/qquerubinn/'"/>
+                <img class="icon" src="./assets/gh.png" alt="My GitHub Profile" onmouseover="changeTitle('IanSalandanan')" onmouseout="resetTitle()" onclick="location.href='https://github.com/IanSalandanan'"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container2">
+                <img src="./assets/about_pic2.jpeg" alt="about_me_pic" class="about_pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/exp.gif" alt="Experience Icon" class="icon"/>
+                        <h1>Experiences</h1>
+                        <p>2 Years of Coding in College</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/educ.gif" alt="Education Icon" class="icon"/>
+                        <h1>Education</h1>
+                        <p>B.S. Information Technology</p>
+                        <p>Mapua Malayan Colleges Laguna</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I started learning to code in my first year of college. It wasn't easy, but I learned by making mistakes.
+                        I believe it's okay to make errors because that's how you grow. I enjoy coding because I like coming up with new solutions that can help people and my country.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experiences'"/>
+    </section>
+
+    <section id="experiences">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/check.gif" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>UI/UX Materials</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.gif" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/load.gif" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Learning</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/load.gif" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Learning</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/check.gif" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C#</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.gif" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.gif" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C++</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.gif" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers2">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/bnm.png" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Bagsik ng Malayan</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/IanSalandanan'">GitHub</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contacts'"/>
+    </section>
+
+    <section id="contacts">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.gif" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mailto:kerbysalandanan@gmail.com">kerbysalandanan@gmail.com</a></p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon up_arrow" onclick="location.href='#about'"/>
+    </section>
+
+    <footer>
+        <p>Copyright &#169; 2024 Kerby Salandanan. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

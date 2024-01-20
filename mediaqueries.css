@@ -15,6 +15,23 @@
 
     #hamburger-nav{
         display: flex;
+        justify-content: flex-end;
+    }
+
+    #hamburger-nav .logo {
+        display: flex;
+        justify-content: flex-start;
+        color: #FB2576;
+    }
+
+    .section_pic-container {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .menu-links{
+        border-radius: 20%;
     }
 
     #experience, .experience-details-container {

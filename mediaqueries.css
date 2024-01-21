@@ -9,13 +9,25 @@
     }
 }
 @media screen and (max-width: 1200px){
+
     #desktop-nav{
         display: none;
     }
 
+    body {
+        margin: 0;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        margin-right: 0;
+    }
+
     #hamburger-nav{
         display: flex;
-        gap: 22rem;
     }
 
     #hamburger-nav .menu-links li{
@@ -30,8 +42,8 @@
     }
 
     #profile .section_pic-container {
-        height: 400px;
-        width: 400px;
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
     }
 
@@ -41,27 +53,23 @@
 
     #about .section_pic-container2 {
         margin-top: 3rem;
-        margin-bottom: 3rem;
-        height: 450px;
-        width: 450px;
+        height: 200px;
+        width: 200px;
         border-radius: 9%;
     }
 
     #experiences {
-        margin-top: 5rem;
+        margin-top: 20rem;
     }
 
     #projects {
-        margin-top: 14rem;
+        margin-top: 30rem;
     }
 
     .menu-links{
         border-radius: 20%;
     }
 
-    #experience, .experience-details-container {
-        margin-top: 2rem;
-    }
 
     #profile, .section-container {
         display: block;

@@ -15,19 +15,44 @@
 
     #hamburger-nav{
         display: flex;
-        justify-content: flex-end;
+        gap: 22rem;
     }
 
-    #hamburger-nav .logo {
-        display: flex;
-        justify-content: flex-start;
+    #hamburger-nav .menu-links li{
         color: #FB2576;
     }
 
-    .section_pic-container {
-        height: 100px;
-        width: 100px;
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        color: #FB2576;
+    }
+
+    #profile .section_pic-container {
+        height: 400px;
+        width: 400px;
         border-radius: 50%;
+    }
+
+    #about {
+        margin-top: 5rem;
+    }
+
+    #about .section_pic-container2 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        height: 450px;
+        width: 450px;
+        border-radius: 9%;
+    }
+
+    #experiences {
+        margin-top: 5rem;
+    }
+
+    #projects {
+        margin-top: 14rem;
     }
 
     .menu-links{

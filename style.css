@@ -97,10 +97,11 @@ a:hover{
 }
 
 .menu-links{
+    z-index: 1;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color:#040D12;
+    background-color:#FB2576;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -210,6 +211,7 @@ section{
 .title{
     font-size: 3rem;
     text-align: center;
+    color: rgb(200, 200, 200);
 }
 
 #socials-container {
